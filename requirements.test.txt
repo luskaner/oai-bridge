@@ -1,0 +1,8 @@
+flask>=1.0
+flask_caching
+lxml
+requests
+pyyaml
+flask_testing
+sickle
+timeout_decorator

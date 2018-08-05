@@ -1,0 +1,5 @@
+flask>=1.0
+flask_caching
+lxml
+requests
+pyyaml

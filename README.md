@@ -13,8 +13,12 @@ OAI Bridge that allows DSpace to harvest multiple collections/communities to a s
   * requests
   * yaml
 * *WGSI server*
-  
+
+*Note: Python packages can be installed with `pip3 install -r requirements.txt`*
+
 ### Testing (*in addition, except the WGSI server*)
+
+Install them with `pip3 install -r requirements.test.txt`
 
 * flask_testing
 * Sickle
@@ -32,7 +36,7 @@ OAI Bridge that allows DSpace to harvest multiple collections/communities to a s
 The tests compare the results between the direct OAI responses and this bridge using *Sickle*.
 
 * `TestStaticListRecords`: Does a test with a curated list of servers with various parameters.
-* `TestDynamicListRecords`: Same as before but with randoms servers from http://www.openarchives.org/pmh/registry/ListFriends. *Note: this test is very prone to fail.*
+* `TestDynamicListRecords`: Same as before but with randoms servers from http://www.openarchives.org/pmh/registry/ListFriends and random configuration. *Note: this test is very prone to fail.*
 
 *Note: This tests might fail due to a timeout specified.*
 
