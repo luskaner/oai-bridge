@@ -1,5 +1,7 @@
 # OAIBridge
 
+[![Build Status](https://travis-ci.org/luskaner/oai-bridge.svg?branch=master)](https://travis-ci.org/luskaner/oai-bridge)
+
 OAI Bridge that allows DSpace to harvest multiple collections/communities to a single internal collection or simply expose multiple servers (remote or local) and sets as a single context.
 
 ## Requirements
