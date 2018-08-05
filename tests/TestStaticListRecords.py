@@ -41,7 +41,7 @@ class TestStaticListRecords(TestListRecords):
     def test_from_no_set_start(self):
         self._test(
             "TEST_NO_SET_START",
-            {'metadataPrefix': 'oai_dc', 'from': '2018-05-02'}
+            {'metadataPrefix': 'oai_dc', 'from': '2018-07-02'}
         )
 
     @timeout_decorator.timeout(180)
@@ -62,19 +62,19 @@ class TestStaticListRecords(TestListRecords):
     def test_from_no_set_end(self):
         self._test(
             "TEST_NO_SET_END",
-            {'metadataPrefix': 'oai_dc', 'from': '2018-05-02'}
+            {'metadataPrefix': 'oai_dc', 'from': '2018-07-02'}
         )
 
     @timeout_decorator.timeout(180)
     def test_fail_start(self):
         self._test(
             "TEST_FAIL_START",
-            {'metadataPrefix': 'oai_dc', 'from': '2018-05-03'}
+            {'metadataPrefix': 'oai_dc', 'from': '2018-07-02'}
         )
 
     @timeout_decorator.timeout(180)
     def test_fail_end(self):
         self._test(
             "TEST_FAIL_END",
-            {'metadataPrefix': 'oai_dc', 'from': '2018-05-03'}
+            {'metadataPrefix': 'oai_dc', 'from': '2018-07-02'}
         )

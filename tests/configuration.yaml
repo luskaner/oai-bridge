@@ -13,10 +13,6 @@ contexts:
             - col_10272_3
       UBU:
           url: "http://riubu.ubu.es/oai/request"
-      UCO:
-          url: "http://ruc.udc.es/oai/request"
-          sets:
-            - col_2183_4775
       UNAV:
           url: "https://dadun.unav.edu/dspace-oai/request"
           sets:
@@ -47,10 +43,6 @@ contexts:
             - col_10272_3
       UBU:
           url: "http://riubu.ubu.es/oai/request"
-      UCO:
-          url: "http://ruc.udc.es/oai/request"
-          sets:
-            - col_2183_4775
       UNAV:
           url: "https://dadun.unav.edu/dspace-oai/request"
           sets:
