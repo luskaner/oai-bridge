@@ -7,8 +7,8 @@ contexts:
       UB:
           # URL of the server (mandatory)
           url: "http://diposit.ub.edu/dspace-oai/request"
-          # List of sets to expose (optional, if not specified)
-          # all are assumed
+          # List of sets to expose (optional)
+          # if not specified all are assumed
           sets:
             - com_2445_41
             - com_2445_1201
