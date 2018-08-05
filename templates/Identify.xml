@@ -1,0 +1,27 @@
+{% extends "base.xml" %}
+
+{% block verb_content %}
+<{{ request.args.get('verb') }}>
+    <repositoryName>OAI-Bridge Repository</repositoryName>
+        <baseURL>{{ request.base_url }}</baseURL>
+        <protocolVersion>2.0</protocolVersion>
+        <adminEmail>pir@csuc.cat</adminEmail>
+        <!-- Fake: not used by DSpace -->
+        <earliestDatestamp>1900-01-01T00:00:00Z</earliestDatestamp>
+        <!-- Fake: not used by DSpace but let's be conservative -->
+        <deletedRecord>transient</deletedRecord>
+        <!-- Fake: Show the least granularity, later will be converted as needed -->
+        <granularity>YYYY-MM-DD</granularity>
+        <description>
+            <oai-identifier xmlns="http://www.openarchives.org/OAI/2.0/oai-identifier"
+                            xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai-identifier http://www.openarchives.org/OAI/2.0/oai-identifier.xsd">
+                <scheme>oai</scheme>
+                <!-- Fake as it depends on the server's response -->
+                <repositoryIdentifier>{{ repositoryIdentifier }}</repositoryIdentifier>
+                <delimiter>:</delimiter>
+                <!-- Fake as it depends on the server's response -->
+                <sampleIdentifier>oai:{{ repositoryIdentifier }}:65944/1234</sampleIdentifier>
+            </oai-identifier>
+        </description>
+</{{ request.args.get('verb') }}>
+{% endblock %}

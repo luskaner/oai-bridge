@@ -1,0 +1,83 @@
+contexts:
+  TEST_NO_SET_START:
+      UPC:
+          url: "https://upcommons.upc.edu/oai/request"
+      UB:
+          url: "http://diposit.ub.edu/dspace-oai/request"
+          sets:
+            - com_2445_41
+            - com_2445_1201
+      UH:
+          url: "http://rabida.uhu.es/oai/request"
+          sets:
+            - col_10272_3
+      UBU:
+          url: "http://riubu.ubu.es/oai/request"
+      UCO:
+          url: "http://ruc.udc.es/oai/request"
+          sets:
+            - col_2183_4775
+      UNAV:
+          url: "https://dadun.unav.edu/dspace-oai/request"
+          sets:
+            - com_10171_7145
+      UNED:
+          url: "http://e-spacio.uned.es:8080/oaiprovider/"
+          sets:
+            - Thesis
+      UCM:
+          url: "http://eprints.ucm.es/cgi/oai2"
+          sets:
+            - 74797065733D746865736973
+      UJAEN:
+          url: "http://ruja.ujaen.es/oai/request"
+      UC3M:
+          url: "https://e-archivo.uc3m.es/dspace-oai/request"
+          sets:
+            - col_10016_2
+  TEST_NO_SET_END:
+      UB:
+          url: "http://diposit.ub.edu/dspace-oai/request"
+          sets:
+            - com_2445_41
+            - com_2445_1201
+      UH:
+          url: "http://rabida.uhu.es/oai/request"
+          sets:
+            - col_10272_3
+      UBU:
+          url: "http://riubu.ubu.es/oai/request"
+      UCO:
+          url: "http://ruc.udc.es/oai/request"
+          sets:
+            - col_2183_4775
+      UNAV:
+          url: "https://dadun.unav.edu/dspace-oai/request"
+          sets:
+            - com_10171_7145
+      UNED:
+          url: "http://e-spacio.uned.es:8080/oaiprovider/"
+          sets:
+            - Thesis
+      UCM:
+          url: "http://eprints.ucm.es/cgi/oai2"
+          sets:
+            - 74797065733D746865736973
+      UJAEN:
+          url: "http://ruja.ujaen.es/oai/request"
+      UC3M:
+          url: "https://e-archivo.uc3m.es/dspace-oai/request"
+          sets:
+            - col_10016_2
+      UPC:
+          url: "https://upcommons.upc.edu/oai/request"
+  TEST_FAIL_START:
+      FAIL:
+          url: "http://path/to/non/existing/oai"
+      UPC:
+          url: "https://upcommons.upc.edu/oai/request"
+  TEST_FAIL_END:
+      UPC:
+          url: "https://upcommons.upc.edu/oai/request"
+      FAIL:
+          url: "http://path/to/non/existing/oai"

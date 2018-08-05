@@ -1,0 +1,16 @@
+{% extends "base.xml" %}
+
+{% block verb_content %}
+    {% if records %}
+        <{{ request.args.get('verb') }}>
+                {% autoescape false %}
+                        {{ records }}
+                {% endautoescape %}
+                {% if resumptionToken %}
+                        <resumptionToken>{{ resumptionToken }}</resumptionToken>
+                {% endif %}
+        </{{ request.args.get('verb') }}>
+    {% else %}
+        <error code="noRecordsMatch"/>
+    {% endif %}
+{% endblock %}

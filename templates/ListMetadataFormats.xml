@@ -1,0 +1,11 @@
+{% extends "base.xml" %}
+
+{% block verb_content %}
+<{{ request.args.get('verb') }}>
+    <metadataFormat>
+        <metadataPrefix>oai_dc</metadataPrefix>
+        <schema>http://www.openarchives.org/OAI/2.0/oai_dc.xsd</schema>
+        <metadataNamespace>http://www.openarchives.org/OAI/2.0/oai_dc/</metadataNamespace>
+    </metadataFormat>
+</{{ request.args.get('verb') }}>
+{% endblock %}

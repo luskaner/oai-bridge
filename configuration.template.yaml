@@ -1,0 +1,22 @@
+# Note: Rename to 'configuration.yaml'
+# root element MUST be 'contexts'
+contexts:
+  # unique context identifier
+  context1:
+      # unique server identifier among this context
+      UB:
+          # URL of the server (mandatory)
+          url: "http://diposit.ub.edu/dspace-oai/request"
+          # List of sets to expose (optional, if not specified)
+          # all are assumed
+          sets:
+            - com_2445_41
+            - com_2445_1201
+      UPC:
+          url: "https://upcommons.upc.edu/oai/request"
+          sets:
+            - com_2117_114
+  context2:
+      UPC:
+          url: "https://upcommons.upc.edu/oai/request"
+          # If not sets are specified then, all are assumed
